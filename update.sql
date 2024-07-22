@@ -10,3 +10,5 @@ SET email = 'lincoln@us.gov' WHERE customer_ID = 20001;
 UPDATE customers
 SET email = 'hello@napoleon.me' WHERE customer_ID = 30001;
 
+SET SQL_SAFE_UPDATES = 1
+
