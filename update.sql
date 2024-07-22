@@ -2,7 +2,7 @@
 SET SQL_SAFE_UPDATES = 0;
 
 UPDATE customers
-SET cemail = 'ppicasso@gmail.com' WHERE customer_ID = 10001;
+SET email = 'ppicasso@gmail.com' WHERE customer_ID = 10001;
 
 UPDATE customers
 SET email = 'lincoln@us.gov' WHERE customer_ID = 20001;
