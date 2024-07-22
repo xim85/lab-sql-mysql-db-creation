@@ -1,4 +1,6 @@
 -- Active: 1721290976752@@127.0.0.1@3306@dealership
+SET SQL_SAFE_UPDATES = 0;
+
 UPDATE customers
 SET cemail = 'ppicasso@gmail.com' WHERE customer_ID = 10001;
 
