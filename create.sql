@@ -2,34 +2,40 @@
 CREATE DATABASE IF NOT EXISTS lab_mysql;
 USE lab_mysql;
 DROP TABLE IF EXISTS cars;
-CREATE TABLE cars (car_id INT,
-VIN VARCHAR(64),
-manufacturer VARCHAR (64),
-model VARCHAR(64), 
-year_car INT, 
-color VARCHAR(32));
+CREATE TABLE cars (car_id INT NOT NULL AUTO_INCREMENT,
+VIN VARCHAR(64) NOT NULL,
+manufacturer VARCHAR (64) NOT NULL,
+model VARCHAR(64)NOT NULL, 
+year_car INT NOT NULL, 
+color VARCHAR(32) NOT NUll,
+PRIMARY KEY(`car_id`));
 DROP TABLE IF EXISTS customers;
-CREATE TABLE customers (customer_ID INT, 
-name VARCHAR(32), 
-phone VARCHAR(32), 
-email VARCHAR(32), 
-address_cust VARCHAR(64), 
-city VARCHAR(64), 
-state_province VARCHAR(32), 
-country VARCHAR(32),
-zip_code INT);
+CREATE TABLE customers (customer_ID INT NOT NULL AUTO_INCREMENT, 
+name VARCHAR(32) NOT NULL, 
+phone VARCHAR(32) NOT NULL, 
+email VARCHAR(32)NOT NULL, 
+address_cust VARCHAR(64) NOT NULL, 
+city VARCHAR(64) NOT NULL, 
+state_province VARCHAR(32) NOT NULL, 
+country VARCHAR(32) NOT NULL,
+zip_code INT NOT NULL,
+PRIMARY KEY (`customer_ID`)
+);
 
 DROP TABLE IF EXISTS salespersons;
 
-CREATE TABLE salespersons (staff_ID INT, 
-name varchar(32), 
-store VARCHAR (32));
+CREATE TABLE salespersons (staff_ID INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(32) NOT NULL, 
+store VARCHAR (32) NOT NULL,
+PRIMARY KEY (`staff_ID`)
+);
 
 DROP TABLE IF EXISTS invoice;
 
-CREATE TABLE invoice (invoice_number INT, 
-date DATE, car_id INT, 
-customer_ID INT, 
-staff_ID INT);
-
+CREATE TABLE invoice (invoice_number INT NOT NULL AUTO_INCREMENT,
+date DATE, car_id INT NOT NULL, 
+customer_ID INT NOT NULL, 
+staff_ID INT NOT NULL,
+PRIMARY KEY (`invoice_number`)
+);
 
