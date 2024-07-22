@@ -33,7 +33,7 @@ PRIMARY KEY (`staff_ID`)
 DROP TABLE IF EXISTS invoice;
 
 CREATE TABLE invoice (invoice_number INT NOT NULL AUTO_INCREMENT,
-date DATE, car_id INT NOT NULL, 
+date DATE, id INT NOT NULL, 
 customer_ID INT NOT NULL, 
 staff_ID INT NOT NULL,
 PRIMARY KEY (`invoice_number`)
