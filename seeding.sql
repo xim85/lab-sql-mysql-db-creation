@@ -22,7 +22,7 @@ VALUES ('00001',	'Petey Cruiser',	'Madrid'),
        ('00007',	'Walter Melon',	'Amsterdam'),	
        ('00008',	'Shonda Leer',	'São Paulo');
        
-INSERT INTO invoice (invoice_number, date, car_ID, customer_ID, staff_ID)
+INSERT INTO invoice (invoice_number, date, id, customer_ID, staff_ID)
 VALUES ('852399038',	'2018-08-22', 1,	1,	3),
        ('731166526',	'2018-12-31',	3,	3,	5),
        ('271135104',	'2019-01-22', 2, 2, 7);  
